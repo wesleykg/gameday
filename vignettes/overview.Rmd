@@ -11,12 +11,24 @@ vignette: >
 
 ## Overview
 
-This package allows you to both check if a NHL team is playing on a specific date and provide you with NHL game information on a specific date.
+This package allows you to both check if a NHL team is playing on a specific date and provide you with NHL game information on a specific date. It does this by accessing the NHL's internet database, so make sure you have an internet connection when you try to use this.
 
 ## gday()
 
 This function, when supplied with a NHL team and date, tells you if that team plays/ed on that day. If no team an/or date is supplied, the Canucks and the current date are used. See the following example.
 
 ```{r}
-gday(team = "Bruins", date = "2011-06-15")
+gameday::gday(team = "Bruins", date = "2011-06-15")
 ```
+
+Notice how both Bruins and 2011-06-15 Have " " around them? This is required, make sure to enclose all entries in "", otherwise it won't work. In addition, make sure the date is in the format yyyy-mm-dd and that the date is a real date.
+
+## scores()
+
+This function, when supplied with a date, provides you with a data.frame containing all teams that played that day, which team was home or away, and the results of the games played. If no date is supplied, the current date is used. See the following example.
+
+```{r}
+gameday::scores(date = "2011-06-15")
+```
+
+Again, make sure to enter the date with " " enclosing it and in the yyyy-mm-dd format otherwise it will not work.

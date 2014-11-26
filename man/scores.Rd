@@ -9,7 +9,7 @@ scores(date = Sys.Date())
 \item{date}{The date of interest}
 }
 \value{
-\code{data.frame} containing data for the date entered
+\code{data.frame} containing data for the date supplied
 }
 \description{
 This function returns info in a data.frame concerning games played on the date supplied.
