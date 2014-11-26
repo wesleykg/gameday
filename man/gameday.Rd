@@ -5,10 +5,11 @@
 \alias{gameday-package}
 \title{My first R package: gameday}
 \description{
-A one line summary of what this package is for
+A one-line summary of what this package is for
 }
 \details{
 Then we can add a larger paragraph
-that can span serveral lines
+that can span several
+lines
 }
 
