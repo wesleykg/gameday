@@ -1,6 +1,6 @@
 ---
 title: "Overview of Gameday"
-author: "Bernhard Konrad"
+author: "Wesley Gerelle"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
