@@ -7,7 +7,8 @@ Description: Query live.nhle.com to check if your NHL team
 Depends:
     R (>= 3.1.1)
 Imports:
-    RCurl
+    RCurl,
+    assertthat
 License: CC0
 LazyData: true
 Suggests:

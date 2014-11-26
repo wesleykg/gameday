@@ -19,3 +19,8 @@ test_that("Vancouver Canucks had a game against Nashville Predators on 2014-11-0
   expect_false(gday(team = "canucks",   date = "2014-11-03"))
   expect_false(gday(team = "predators", date = "2014-11-03"))
 })
+
+test_that("Date supplied is actually a date, and not otherwise", {
+  expect_true(check_date("2014-02-28"))
+  expect_false(check_date("2014-02-29"))
+})

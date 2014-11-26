@@ -20,6 +20,9 @@
 #' gday("canucks")
 #' gday("Bruins")
 gday <- function(team = "canucks", date = Sys.Date()){
+  if (internet_connection() != TRUE)
+    stop("You aren't connected to the internet, or Google is down; it's likely the former")
+  else
   url  <- paste0('http://live.nhle.com/GameData/GCScoreboard/',
                  date, '.jsonp')
   grepl(team, RCurl::getURL(url), ignore.case=TRUE)
