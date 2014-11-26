@@ -24,3 +24,7 @@ test_that("Date supplied is actually a date, and not otherwise", {
   expect_true(check_date("2014-02-28"))
   expect_false(check_date("2014-02-29"))
 })
+
+test_that("If a wrong date is supplied, throw an error", {
+  expect_error(gday(date = "2014-02-29"), "Error")
+})
