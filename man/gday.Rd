@@ -19,9 +19,9 @@ This function returns TRUE if your NHL team plays on a date
 and FALSE otherwise
 }
 \details{
-You know then problem: You're in your office writing R code and
+You know the problem: You're in your office writing R code and
 suddenly have the urge to check whether your NHL team has a game on a date.
-Before you know it you just wasted 15 minutes browsing the lastest
+Before you know it you just wasted 15 minutes browsing the latest
 news on your favorite hockey webpage.
 Suffer no more! You can now ask R directly, without tempting yourself
 by firing up your web browser.
