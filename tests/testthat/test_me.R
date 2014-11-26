@@ -25,6 +25,11 @@ test_that("Date supplied is actually a date, and not otherwise", {
   expect_false(check_date("2014-02-29"))
 })
 
-test_that("If a wrong date is supplied, throw an error", {
+test_that("If a nonexistant date is supplied, throw an error", {
   expect_error(gday(date = "2014-02-29"), "Error")
+  expect_error(scores(date = "2014-02-29"), "Error")
+})
+
+test_that("scores() supplies a data.frame", {
+  expect_is(scores("2011-06-15"), "data.frame")
 })
