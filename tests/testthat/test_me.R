@@ -5,3 +5,7 @@ test_that("case is ignored", {
 test_that("Seattle does not have a NHL team", {
   expect_false(gday("seattle"))
 })
+
+test_that("if no team is supplied, default to canucks", {
+  expect_equal(gday(), gday("canucks"))
+})

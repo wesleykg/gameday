@@ -3,13 +3,13 @@
 \alias{gday}
 \title{Is it Gameday?}
 \usage{
-gday(team.name)
+gday(team = "canucks")
 }
 \arguments{
-\item{team.name}{The name of your team}
+\item{team}{The name of your team}
 }
 \value{
-Logical \code{TRUE} if \code{team.name} has a NHL game today,
+Logical \code{TRUE} if \code{team} has a NHL game today,
 \code{FALSE} otherwise
 }
 \description{
@@ -25,7 +25,7 @@ Suffer no more! You can now ask R directly, without tempting yourself
 by firing up your web browser.
 }
 \note{
-case in \code{team.name} is ignored
+case in \code{team} is ignored
 }
 \examples{
 gday("canucks")
